@@ -7,6 +7,9 @@ echo "####################### PULL PUSH ###################################"
 echo "pwd : " $(pwd)
 git gc --aggressive --prune=now
 git config credential.helper store
+git config --global user.name "astrolabe31"
+git remote add origin https://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@github.com/astrolabe31/master-node2.git
+
 sleep 5
 git add --all
 git commit -m "update"  
@@ -15,8 +18,10 @@ git commit -m "update"
 
 # git clone https://renaud:glpat-918Lzrfc_phAFaBdewt7@gitlab.astrolabe31.fr/k8s/dashboard.git
 
-git pull https://github.com/astrolabe31/master-node2.git 
+git pull 
+# https://github.com/astrolabe31/master-node2.git 
 
-git push https://astrolabe31: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@github.com/astrolabe31/master-node2.git
+git push 
+# https://astrolabe31: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@github.com/astrolabe31/master-node2.git
 
 echo "####################### END ###################################"
