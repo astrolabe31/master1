@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "####################### backup master ###################################"
-cd ./etcd/backup && backup.sh
+cd ./etcd/backup && ./backup.sh
 # ./etcd/backup/backup.sh
 echo "####################### COMPRESS data ###################################"
 tar czvf ./etcd/backup/snapshot.db.tar.gz ./etcd/backup/snapshot.db
