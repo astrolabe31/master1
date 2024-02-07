@@ -8,6 +8,7 @@ echo "####################### COMPRESS data ###################################"
 echo "####################### PULL PUSH ###################################"
 # git init
 echo "pwd : " $(pwd)
+git gc --aggressive --prune=now
 sleep 5
 git add --all
 git commit -m "update"  
