@@ -8,8 +8,8 @@ echo "pwd : " ${pwd}
 git gc --aggressive --prune=now
 git config credential.helper store
 git config --global user.name "astrolabe31"
-# git remote add origin https://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@github.com/astrolabe31/master-node2.git
-git config --global credential.helper '!f() { sleep 1; echo "username=astrolabe31 token=${pwd}"; }; f'
+git remote set-url origin https://"astrolabe31":"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"@github.com/astrolabe31/master-node2.git
+# git config --global credential.helper '!f() { sleep 1; echo "username=astrolabe31 token=${pwd}"; }; f'
 
 sleep 5
 git add --all
