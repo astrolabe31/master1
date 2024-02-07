@@ -16,6 +16,6 @@ git commit -m "update"
 
 git pull https://github.com/astrolabe31/master-node2.git main
 
-git push https://astrolabe31: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@github.com/astrolabe31/master-node2.git main
+git push https://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@github.com/astrolabe31/master-node2.git main
 
 echo "####################### END ###################################"
