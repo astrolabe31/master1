@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "####################### backup master ###################################"
-cd ./etcd/backup && ./backup.sh
+cd ./etcd/backup && ./backup.sh && tar czvf ./snapshot.db.tar.gz ./snapshot.db
 # ./etcd/backup/backup.sh
 echo "####################### COMPRESS data ###################################"
-tar czvf ./etcd/backup/snapshot.db.tar.gz ./etcd/backup/snapshot.db
+# tar czvf ./etcd/backup/snapshot.db.tar.gz ./etcd/backup/snapshot.db
 rm ./etcd/backup/snapshot.db
 echo "####################### PULL PUSH ###################################"
 # git init
