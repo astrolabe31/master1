@@ -2,7 +2,7 @@
 echo "####################### backup master ###################################"
 ./etcd/backup/backup.sh
 echo "####################### COMPRESS data ###################################"
-./etcd/backup/tar czvf snapshot.db.tar.gz snapshot.db
+tar czvf ./etcd/backup/snapshot.db.tar.gz ./etcd/backup/snapshot.db
 rm ./etcd/backup/snapshot.db
 echo "####################### PULL PUSH ###################################"
 # git init
