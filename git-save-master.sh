@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "####################### backup master ###################################"
+./etcd/backup/backup.sh
 echo "####################### COMPRESS data ###################################"
 ./etcd/backup/tar czvf snapshot.db.tar.gz snapshot.db
 rm ./etcd/backup/snapshot.db
