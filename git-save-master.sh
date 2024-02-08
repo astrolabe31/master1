@@ -6,13 +6,15 @@ echo "####################### PULL PUSH ###################################"
 
 git gc --aggressive --prune=now
 git config --global push.default simple
+git config --global user.email "renaud.gilbert@hotmail.fr"
+git config --global user.name "astrolabe31"
 
 sleep 5
 git add --all
 git commit -m "update"  
 
-git pull https://github.com/astrolabe31/master-node2.git main
+git pull https://astrolabe31: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@github.com/astrolabe31/master-node2.git main
 
-git push https://astrolabe31:xxx@github.com/astrolabe31/master-node2.git main
+git push https://astrolabe31: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@github.com/astrolabe31/master-node2.git main
 
 echo "####################### END ###################################"
