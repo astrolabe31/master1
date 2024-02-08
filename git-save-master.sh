@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "####################### install backup master ###################################"
+tar xvf etcd-v3.5.9-linux-amd64.tar.gz
+cd ./etcd-v3.5.9-linux-amd64 && mv -f etcd* /usr/local/bin/ 
+cd .. && rm -rf ./etcd-v3.5.9-linux-amd64
 echo "####################### backup master ###################################"
 cd ./etcd/backup && ./backup.sh && tar czvf snapshot.db.tar.gz snapshot.db &&  rm snapshot.db
 echo "####################### COMPRESS data ###################################"
